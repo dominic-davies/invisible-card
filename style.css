@@ -12,37 +12,53 @@
 }
 
 .card-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/bg.jpg) no-repeat center;
+  border-radius: 5px;
   height: 600px;
-  width: 450px;
   border: 1px solid#fff;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/bg.jpg) no-repeat center;
-  border-radius: 5px;
   transition: box-shadow 1s;
+  transform: translate(-50%, -50%);
+  width: 450px;
+
+  /* hide card */
+  overflow: hidden;
 }
 
 .card-wrapper:hover {
   box-shadow: 0 0 30px #fff;
 }
 
+/* card will slide down */
+.card-wrapper:hover .card {
+  top: 0;
+}
 .card {
+  background-color: #fff;
   background: linear-gradient(
     190deg,
     rgba(21, 199, 30, 0.8) 50%,
     rgba(233, 67, 67, 0.8) 0
   );
+  border-radius: inherit;
   height: 100%;
   width: 100%;
-  background-color: #fff;
-  border-radius: inherit;
+
+  /* flex */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  /* hide card + see wrapper overflow */
+  position: absolute;
+  top: -100%;
+
+  /* card slide down after 1.5 secs */
+  transition: top 0.3s 1s;
 }
 
 .card-img {
