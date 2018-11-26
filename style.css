@@ -99,3 +99,41 @@
   bottom: -10%;
   margin-left: 10px;
 }
+
+/* SOCIAL MEDIA ICONS */
+.card-icons {
+  /* make horizontal */
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 50%;
+}
+
+.card-icon-link {
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  /* make block level to change width */
+  /* display: block; */
+  /* need to center icons in the block use flex */
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  text-decoration: none;
+  transition: border 0.3s;
+  width: 35px;
+}
+
+.card-icon-link:hover {
+  border: 1px solid #1b5cf5;
+}
+
+.card-icon {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.card-icon-link:hover .card-icon {
+  color: #1b5cf5;
+}
