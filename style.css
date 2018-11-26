@@ -137,3 +137,18 @@
 .card-icon-link:hover .card-icon {
   color: #1b5cf5;
 }
+
+.card-btn {
+  background: linear-gradient(#6837ee, #0d2b7e);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  color: #ddd;
+  cursor: pointer;
+  font-size: 12px;
+  height: 35px;
+  margin-bottom: 20px;
+  outline: none;
+  text-transform: uppercase;
+  width: 150px;
+}
