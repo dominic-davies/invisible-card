@@ -55,3 +55,18 @@
   padding: 10px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
+
+.card-heading {
+  background: linear-gradient(#0a9751, #06831b);
+  color: #fff;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  padding: 5px 0;
+  text-transform: uppercase;
+  text-align: center;
+  /* 3D effect */
+  transform: perspective(1000px) skewX(-20deg) rotateY(40deg);
+  width: 70%;
+}
