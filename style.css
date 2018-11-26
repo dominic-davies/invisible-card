@@ -70,3 +70,32 @@
   transform: perspective(1000px) skewX(-20deg) rotateY(40deg);
   width: 70%;
 }
+
+.card-paragraph {
+  color: #ddd;
+  font-size: 18px;
+  position: relative;
+  text-align: justify;
+  width: 85%;
+}
+
+.card-paragraph::first-letter {
+  margin-left: 40px;
+}
+
+.card-paragraph i {
+  color: #fff;
+  font-size: 25px;
+  font-style: italic;
+  /* parent is .card-paragraph (relative) */
+  position: absolute;
+}
+
+.card-paragraph i:first-child {
+  top: -10%;
+}
+
+.card-paragraph i:last-child {
+  bottom: -10%;
+  margin-left: 10px;
+}
